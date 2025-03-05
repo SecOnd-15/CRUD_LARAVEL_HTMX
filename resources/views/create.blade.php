@@ -24,6 +24,15 @@
             background-color: #ff1493; /* Darker pink on hover */
             transform: scale(1.05);
         }
+        .btn-secondary {
+            background-color: #6c757d; /* Gray cancel button */
+            border: none;
+            transition: 0.3s ease-in-out;
+        }
+        .btn-secondary:hover {
+            background-color: #5a6268; /* Darker gray on hover */
+            transform: scale(1.05);
+        }
         .form-label {
             color: #d63384; /* Dark pink labels */
         }
@@ -82,7 +91,10 @@
                             @enderror
                         </div>
 
-                        <button type="submit" class="btn btn-primary w-100">💖 Create Event 💖</button>
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-primary">💖 Create Event 💖</button>
+                            <a href="{{ route('events.index') }}" class="btn btn-danger">Cancel</a>
+                        </div>
                     </form>
                 </div>
             </div>
