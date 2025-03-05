@@ -84,7 +84,7 @@
     <!-- Main Content -->
     <div class="container mt-4">
         <div class="card p-4">
-            <h2 class="mb-3 text-center text-pink">Upcoming Events</h2>
+            <h2 class="mb-3 text-center text-pink">Events</h2>
 
             <!-- Flash Message -->
             <div id="flash-message">
@@ -123,7 +123,7 @@
                                     <i class="bi bi-pencil-square"></i> Edit
                                 </button>
 
-                                <!-- Delete Button with HTMX -->
+
                                 <button class="btn btn-danger btn-sm" 
                                     hx-delete="{{ route('events.destroy', $event->id) }}" 
                                     hx-target="#event-{{ $event->id }}" 
